@@ -27,9 +27,9 @@ Dangling pointers, which occur when a pointer references memory that has already
 In call by value, a function receives a copy of the actual argument, meaning any changes made inside the function do not affect the original variable, whereas in call by reference, the function receives the address of the variable, allowing it to modify the original data directly
 
 7.
-    (a) Scenario where call by value is preferred.
-        Call by value is ideal when a function only needs to read or use data without changing the original variable. It ensures the original variable remains safe from unintended modifications. For example, a function that calculates the square of a number or returns a computed result based on inputs without altering them.
+(a) Scenario where call by value is preferred.
+Call by value is ideal when a function only needs to read or use data without changing the original variable. It ensures the original variable remains safe from unintended modifications. For example, a function that calculates the square of a number or returns a computed result based on inputs without altering them.
 
-    (b) Scenario where call by reference is preferred.
+(b) Scenario where call by reference is preferred.
+Call by reference is preferred when a function needs to modify the original variable or when passing large data structures efficiently to save memory and processing time. Examples include swapping two numbers or modifying elements of an array
 
-        Call by reference is preferred when a function needs to modify the original variable or when passing large data structures efficiently to save memory and processing time. Examples include swapping two numbers or modifying elements of an array
